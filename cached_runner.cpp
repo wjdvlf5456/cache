@@ -1,4 +1,5 @@
 #include "cached_runner.h"
+#include <iostream>
 
 CachedRunner::CachedRunner(Cache &cache) : cache(cache) {}
 
