@@ -16,6 +16,7 @@ void print(const std::string &message) {
 // double 값을 문자열로 변환한다
 std::string doubleToString(double value) {
   std::ostringstream ss;
+  // ostringstream: string변수 합칠 때 사용   <-> istringstream 는 string parsing 할 때 사용
   ss << value;
   return ss.str();
 }
@@ -24,6 +25,7 @@ int main() {
   Cache cache;
   CachedRunner runner(cache);
   Task task;
+
 
   TaskSet taskSet("resources/task_set.txt");
   int index = 0;

@@ -5,14 +5,19 @@
 
 #define CACHE_SIZE 10
 
+
 class Cache {
 private:
   // TODO: private inner struct/class 선언 가능
   // TODO: private 멤버 변수와 함수 추가 가능
+  std::string key;
+
 
 public:
   Cache();
   ~Cache();
+
+
   // int를 cache에 추가한다
   void add(std::string key, int value);
   // double을 cache에 추가한다
